@@ -1,0 +1,35 @@
+[0.474s] Invoking command in '/home/swapnil/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/swapnil/ros2_ws/build/my_py_pkg/prefix_override:/home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/swapnil/ros2_ws/build/my_py_pkg/build install --record /home/swapnil/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.602s] running egg_info
+[0.603s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[0.603s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.603s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.603s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.604s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.604s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.604s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.604s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.606s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.616s] running build
+[0.616s] running build_py
+[0.616s] creating /home/swapnil/ros2_ws/build/my_py_pkg/build
+[0.616s] creating /home/swapnil/ros2_ws/build/my_py_pkg/build/lib
+[0.616s] creating /home/swapnil/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.616s] copying my_py_pkg/__init__.py -> /home/swapnil/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.616s] running install
+[0.626s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.626s]   warnings.warn(
+[0.626s] running install_lib
+[0.626s] creating /home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.626s] copying /home/swapnil/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.626s] byte-compiling /home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[0.627s] running install_data
+[0.627s] creating /home/swapnil/ros2_ws/install/my_py_pkg/share/ament_index
+[0.627s] creating /home/swapnil/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[0.627s] creating /home/swapnil/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.627s] copying resource/my_py_pkg -> /home/swapnil/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.627s] copying package.xml -> /home/swapnil/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.627s] running install_egg_info
+[0.628s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.629s] running install_scripts
+[0.642s] writing list of installed files to '/home/swapnil/ros2_ws/build/my_py_pkg/install.log'
+[0.656s] Invoked command in '/home/swapnil/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/swapnil/ros2_ws/build/my_py_pkg/prefix_override:/home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/swapnil/ros2_ws/build/my_py_pkg/build install --record /home/swapnil/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
