@@ -1,0 +1,37 @@
+[33mCMake Warning (dev) at CMakeLists.txt:16 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:19 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:22 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/srv/add_two__ints.hpp: No such file or directory
+    2 | #include [01;31m[K"example_interfaces/srv/add_two__ints.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/add_two_ints_server.dir/build.make:76: CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/add_two_ints_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

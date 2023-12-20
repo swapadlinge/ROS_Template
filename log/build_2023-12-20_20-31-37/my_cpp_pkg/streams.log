@@ -1,0 +1,60 @@
+[0.052s] Invoking command in '/home/swapnil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
+[0.072s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.177s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.195s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.197s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.200s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.207s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.217s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.256s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.257s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.342s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.451s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.598s] -- Configuring done
+[0.600s] [33mCMake Warning (dev) at CMakeLists.txt:16 (add_executable):
+[0.600s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.600s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.600s]   command to set the policy and suppress this warning.
+[0.600s] 
+[0.600s]   File:
+[0.600s] 
+[0.600s]     /home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp
+[0.600s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.601s] [0m
+[0.601s] [33mCMake Warning (dev) at CMakeLists.txt:19 (add_executable):
+[0.601s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.601s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.601s]   command to set the policy and suppress this warning.
+[0.601s] 
+[0.601s]   File:
+[0.601s] 
+[0.601s]     /home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp
+[0.601s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.601s] [0m
+[0.601s] [33mCMake Warning (dev) at CMakeLists.txt:22 (add_executable):
+[0.601s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.601s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.601s]   command to set the policy and suppress this warning.
+[0.602s] 
+[0.602s]   File:
+[0.602s] 
+[0.602s]     /home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp
+[0.602s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.602s] [0m
+[0.635s] -- Generating done
+[0.636s] -- Build files have been written to: /home/swapnil/ros2_ws/build/my_cpp_pkg
+[0.662s] [35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[0.662s] [35m[1mConsolidate compiler generated dependencies of target smartphone[0m
+[0.662s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.674s] [ 12%] [32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o[0m
+[0.679s] [ 37%] Built target smartphone
+[0.679s] [ 62%] Built target cpp_node
+[0.679s] [ 87%] Built target robot_news_station
+[0.798s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/srv/add_two__ints.hpp: No such file or directory
+[0.798s]     2 | #include [01;31m[K"example_interfaces/srv/add_two__ints.hpp"[m[K
+[0.798s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.798s] compilation terminated.
+[0.800s] gmake[2]: *** [CMakeFiles/add_two_ints_server.dir/build.make:76: CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o] Error 1
+[0.801s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/add_two_ints_server.dir/all] Error 2
+[0.801s] gmake: *** [Makefile:146: all] Error 2
+[0.802s] Invoked command in '/home/swapnil/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7

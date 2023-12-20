@@ -1,0 +1,44 @@
+[0.058s] Invoking command in '/home/swapnil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
+[0.132s] [ 12%] [32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o[0m
+[0.132s] [ 37%] Built target cpp_node
+[0.161s] [ 62%] Built target smartphone
+[0.165s] [ 87%] Built target robot_news_station
+[1.721s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:3:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kusing[m[K’
+[1.721s]     3 | using std::placeholders::_1
+[1.721s]       |                            [01;31m[K^[m[K
+[1.721s]       |                            [32m[K;[m[K
+[1.721s]     4 | [32m[Kusing[m[K std::placeholders::_2
+[1.721s]       | [32m[K~~~~~[m[K                       
+[1.721s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:4:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kclass[m[K’
+[1.721s]     4 | using std::placeholders::_2
+[1.721s]       |                            [01;31m[K^[m[K
+[1.721s]       |                            [32m[K;[m[K
+[1.721s]     5 | [32m[Kclass[m[K AddTwoIntsServerNode : public rclcpp::Node
+[1.721s]       | [32m[K~~~~~[m[K                       
+[1.732s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:[m[K In constructor ‘[01m[KAddTwoIntsServerNode::AddTwoIntsServerNode()[m[K’:
+[1.732s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:11:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstf[m[K’ has not been declared
+[1.732s]    11 |             [01;31m[Kstf[m[K::bind(&AddTwoIntsServerNode::callbackAddTwoInts, this, _1,_2)
+[1.732s]       |             [01;31m[K^~~[m[K
+[1.732s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:14:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[1.732s]    14 |     [01;31m[K}[m[K
+[1.732s]       |     [01;31m[K^[m[K
+[1.741s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.741s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.741s]                  from [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:1[m[K:
+[1.742s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:[m[K In member function ‘[01m[Kvoid AddTwoIntsServerNode::callbackAddTwoInts(example_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::SharedPtr, example_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.742s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/add_two_ints_server.cpp:21:80:[m[K [01;31m[Kerror: [m[K‘[01m[Krespons[m[K’ was not declared in this scope; did you mean ‘[01m[Kresponse[m[K’?
+[1.742s]    21 |         RCLCPP_INFO(this->get_logger(),"%d + %d = %d", request->a, request->b, [01;31m[Krespons[m[K->sum);
+[1.742s]       |                                                                                [01;31m[K^~~~~~~[m[K
+[2.036s] gmake[2]: *** [CMakeFiles/add_two_ints_server.dir/build.make:76: CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o] Error 1
+[2.036s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/add_two_ints_server.dir/all] Error 2
+[2.037s] gmake: *** [Makefile:146: all] Error 2
+[2.041s] Invoked command in '/home/swapnil/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
