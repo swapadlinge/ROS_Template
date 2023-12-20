@@ -1,0 +1,8 @@
+[01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K In constructor ‘[01m[KSmartphoneNode::SmartphoneNode()[m[K’:
+[01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:8:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscriber_[m[K’?
+    8 |         [01;31m[Ksubscriber[m[K = this->create_subscription<example_interfaces::msg::String>("robot_news", 10, std::bind(
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Ksubscriber_[m[K
+gmake[2]: *** [CMakeFiles/smartphone.dir/build.make:76: CMakeFiles/smartphone.dir/src/smartphone.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smartphone.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,83 @@
+[0.056s] Invoking command in '/home/swapnil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
+[0.174s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.338s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.405s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.410s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.422s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.439s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.475s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.546s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.551s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.660s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.820s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.004s] -- Configuring done
+[1.007s] [33mCMake Warning (dev) at CMakeLists.txt:16 (add_executable):
+[1.007s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[1.007s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[1.007s]   command to set the policy and suppress this warning.
+[1.007s] 
+[1.007s]   File:
+[1.007s] 
+[1.007s]     /home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp
+[1.007s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.007s] [0m
+[1.021s] -- Generating done
+[1.023s] -- Build files have been written to: /home/swapnil/ros2_ws/build/my_cpp_pkg
+[1.046s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[1.055s] [ 25%] [32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o[0m
+[1.060s] [ 75%] Built target cpp_node
+[2.577s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:7:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KMyNode[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.577s]     7 |     [01;31m[KMyNode[m[K() : Node("robot_news_station"), robot_name_("R2D2")
+[2.577s]       |     [01;31m[K^~~~~~[m[K
+[2.580s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:[m[K In member function ‘[01m[Kint RobotNewsStationNode::MyNode()[m[K’:
+[2.580s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:7:16:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[2.580s]     7 |     MyNode() : [01;31m[KNode[m[K("robot_news_station"), robot_name_("R2D2")
+[2.580s]       |                [01;31m[K^~~~[m[K
+[2.581s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:11:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmillliseconds[m[K’ is not a member of ‘[01m[Kstd::chrono[m[K’; did you mean ‘[01m[Kmilliseconds[m[K’?
+[2.581s]    11 |             std::chrono::[01;31m[Kmillliseconds[m[K(500), std::bind(&RobotNewsStationNode::publishNews,this)
+[2.581s]       |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[2.582s]       |                          [32m[Kmilliseconds[m[K
+[2.584s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:14:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[2.584s]    14 |     [01;35m[K}[m[K
+[2.584s]       |     [01;35m[K^[m[K
+[2.884s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[2.884s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[2.884s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[2.884s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[2.884s]                  from [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:1[m[K:
+[2.884s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = RobotNewsStationNode; _Args = {}; _Tp = RobotNewsStationNode][m[K’:
+[2.884s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = RobotNewsStationNode; _Args = {}; _Tp = RobotNewsStationNode; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<RobotNewsStationNode>][m[K’
+[2.884s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = RobotNewsStationNode; _Alloc = std::allocator<RobotNewsStationNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.884s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = RobotNewsStationNode; _Alloc = std::allocator<RobotNewsStationNode>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.884s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<RobotNewsStationNode>; _Args = {}; _Tp = RobotNewsStationNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[2.884s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<RobotNewsStationNode>; _Args = {}; _Tp = RobotNewsStationNode][m[K’
+[2.884s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = RobotNewsStationNode; _Alloc = std::allocator<RobotNewsStationNode>; _Args = {}][m[K’
+[2.884s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = RobotNewsStationNode; _Args = {}][m[K’
+[2.884s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:35:55:[m[K   required from here
+[2.884s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KRobotNewsStationNode::RobotNewsStationNode()[m[K’
+[2.884s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[2.884s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.884s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:4:7:[m[K [01;36m[Knote: [m[K‘[01m[KRobotNewsStationNode::RobotNewsStationNode()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[2.885s]     4 | class [01;36m[KRobotNewsStationNode[m[K : public rclcpp::Node
+[2.885s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.885s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:4:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[2.885s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.885s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.885s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.885s]                  from [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:1[m[K:
+[2.885s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[2.885s]  1294 |   [01;36m[KNode[m[K(
+[2.885s]       |   [01;36m[K^~~~[m[K
+[2.885s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[2.885s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[2.885s]   101 |   explicit [01;36m[KNode[m[K(
+[2.885s]       |            [01;36m[K^~~~[m[K
+[2.885s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[2.885s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[2.885s]    89 |   explicit [01;36m[KNode[m[K(
+[2.885s]       |            [01;36m[K^~~~[m[K
+[2.885s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[3.043s] gmake[2]: *** [CMakeFiles/robot_news_station.dir/build.make:76: CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o] Error 1
+[3.043s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/robot_news_station.dir/all] Error 2
+[3.043s] gmake: *** [Makefile:146: all] Error 2
+[3.046s] Invoked command in '/home/swapnil/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7

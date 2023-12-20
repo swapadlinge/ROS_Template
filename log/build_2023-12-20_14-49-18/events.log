@@ -1,0 +1,153 @@
+[0.000000] (-) TimerEvent: {}
+[0.003007] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.003092] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.003111] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.056814] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.058364] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.058461] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/swapnil/ros2_ws/build/my_cpp_pkg', '--', '-j7', '-l7'], 'cwd': '/home/swapnil/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'swapnil'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/swapnil'), ('OLDPWD', '/home/swapnil'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1245'), ('SYSTEMD_EXEC_PID', '1662'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4242'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/swapnil/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'swapnil'), ('JOURNAL_STREAM', '8:25630'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'swapnil'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/swapnil-vm:@/tmp/.ICE-unix/1398,unix/swapnil-vm:/tmp/.ICE-unix/1398'), ('INVOCATION_ID', '2aeb0f6ce76443f88ed09607a1975bbc'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7UPEG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/swapnil/ros2_ws/install/my_py_pkg:/home/swapnil/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:7a814dac-9ae7-4817-9d2a-33fbc19c241b'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/swapnil/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/swapnil/ros2_ws/build/my_py_pkg:/home/swapnil/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/swapnil/ros2_ws/install/my_cpp_pkg:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.100261] (-) TimerEvent: {}
+[0.161881] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.201198] (-) TimerEvent: {}
+[0.302646] (-) TimerEvent: {}
+[0.310123] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.369349] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.374222] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.385805] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.402744] (-) TimerEvent: {}
+[0.403948] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.424769] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.501792] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.503128] (-) TimerEvent: {}
+[0.506211] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.603307] (-) TimerEvent: {}
+[0.612770] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.705075] (-) TimerEvent: {}
+[0.777909] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[0.807487] (-) TimerEvent: {}
+[0.908695] (-) TimerEvent: {}
+[0.958225] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.961011] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:16 (add_executable):\n'}
+[0.961275] (my_cpp_pkg) StderrLine: {'line': b'  Policy CMP0115 is not set: Source file extensions must be explicit.  Run\n'}
+[0.961544] (my_cpp_pkg) StderrLine: {'line': b'  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy\n'}
+[0.961596] (my_cpp_pkg) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.961626] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.961655] (my_cpp_pkg) StderrLine: {'line': b'  File:\n'}
+[0.961843] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.962009] (my_cpp_pkg) StderrLine: {'line': b'    /home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp\n'}
+[0.962041] (my_cpp_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.962070] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.962099] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:19 (add_executable):\n'}
+[0.962126] (my_cpp_pkg) StderrLine: {'line': b'  Policy CMP0115 is not set: Source file extensions must be explicit.  Run\n'}
+[0.962153] (my_cpp_pkg) StderrLine: {'line': b'  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy\n'}
+[0.962180] (my_cpp_pkg) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.962219] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.962245] (my_cpp_pkg) StderrLine: {'line': b'  File:\n'}
+[0.962270] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.962295] (my_cpp_pkg) StderrLine: {'line': b'    /home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp\n'}
+[0.962320] (my_cpp_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.962345] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.980321] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.982544] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/swapnil/ros2_ws/build/my_cpp_pkg\n'}
+[1.007297] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_news_station\x1b[0m\n'}
+[1.007528] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[1.009411] (-) TimerEvent: {}
+[1.016268] (my_cpp_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o\x1b[0m\n'}
+[1.022255] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target cpp_node\n'}
+[1.023056] (my_cpp_pkg) StdoutLine: {'line': b'[ 83%] Built target robot_news_station\n'}
+[1.112829] (-) TimerEvent: {}
+[1.213690] (-) TimerEvent: {}
+[1.318649] (-) TimerEvent: {}
+[1.421359] (-) TimerEvent: {}
+[1.526651] (-) TimerEvent: {}
+[1.632717] (-) TimerEvent: {}
+[1.734947] (-) TimerEvent: {}
+[1.851250] (-) TimerEvent: {}
+[1.954725] (-) TimerEvent: {}
+[2.060305] (-) TimerEvent: {}
+[2.163594] (-) TimerEvent: {}
+[2.267192] (-) TimerEvent: {}
+[2.368306] (-) TimerEvent: {}
+[2.475486] (-) TimerEvent: {}
+[2.483858] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSmartphoneNode::SmartphoneNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.484023] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:8:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksubscriber_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.484067] (my_cpp_pkg) StderrLine: {'line': b'    8 |         \x1b[01;31m\x1b[Ksubscriber\x1b[m\x1b[K = this->create_subscription<example_interfaces::msg::String>("robot_news", 10, std::bind(\n'}
+[2.484100] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.484129] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ksubscriber_\x1b[m\x1b[K\n'}
+[2.489050] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.489174] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.489206] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.489232] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.489257] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.489284] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.489361] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.489409] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.489441] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.489472] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.489498] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:1\x1b[m\x1b[K:\n'}
+[2.489524] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.489551] (my_cpp_pkg) StderrLine: {'line': b'   10 |         RCLCPP_INFO(this=\x1b[01;31m\x1b[K>\x1b[m\x1b[Kget_logger(), "Smarphone has been Started ..")\n'}
+[2.489577] (my_cpp_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.489606] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.489632] (my_cpp_pkg) StderrLine: {'line': b'   10 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this=>get_logger(), "Smarphone has been Started ..")\n'}
+[2.489660] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.489987] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.490058] (my_cpp_pkg) StderrLine: {'line': b'   10 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this=>get_logger(), "Smarphone has been Started ..")\n'}
+[2.490088] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.490115] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.490142] (my_cpp_pkg) StderrLine: {'line': b'   10 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this=>get_logger(), "Smarphone has been Started ..")\n'}
+[2.490167] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.490193] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.490220] (my_cpp_pkg) StderrLine: {'line': b'   10 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this=>get_logger(), "Smarphone has been Started ..")\n'}
+[2.490250] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.490274] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.490299] (my_cpp_pkg) StderrLine: {'line': b'   10 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this=>get_logger(), "Smarphone has been Started ..")\n'}
+[2.490325] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.490656] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.490722] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.490750] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.490782] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.490807] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.490833] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.490859] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.490884] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.490910] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.490936] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.490961] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.490987] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:1\x1b[m\x1b[K:\n'}
+[2.491012] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.491039] (my_cpp_pkg) StderrLine: {'line': b'   10 |         RCLCPP_INFO(this=\x1b[01;31m\x1b[K>\x1b[m\x1b[Kget_logger(), "Smarphone has been Started ..")\n'}
+[2.491067] (my_cpp_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.491092] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.491118] (my_cpp_pkg) StderrLine: {'line': b'   10 |         RCLCPP_INFO(this=\x1b[01;31m\x1b[K>\x1b[m\x1b[Kget_logger(), "Smarphone has been Started ..")\n'}
+[2.491143] (my_cpp_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.491169] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:11:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.491194] (my_cpp_pkg) StderrLine: {'line': b'   11 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[2.491220] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.496377] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SmartphoneNode::callbackRobotNews(example_interfaces::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.496508] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:15:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRCL_CPPINFO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.496551] (my_cpp_pkg) StderrLine: {'line': b'   15 |         \x1b[01;31m\x1b[KRCL_CPPINFO\x1b[m\x1b[K(this->get_logger()," %s ",msg->data.c_str())\n'}
+[2.496581] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.496609] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\n'}
+[2.575799] (-) TimerEvent: {}
+[2.683379] (-) TimerEvent: {}
+[2.785246] (-) TimerEvent: {}
+[2.893186] (-) TimerEvent: {}
+[2.993991] (-) TimerEvent: {}
+[3.099930] (-) TimerEvent: {}
+[3.202161] (-) TimerEvent: {}
+[3.308835] (-) TimerEvent: {}
+[3.410404] (-) TimerEvent: {}
+[3.511934] (-) TimerEvent: {}
+[3.613236] (-) TimerEvent: {}
+[3.713931] (-) TimerEvent: {}
+[3.819564] (-) TimerEvent: {}
+[3.925217] (-) TimerEvent: {}
+[4.030047] (-) TimerEvent: {}
+[4.133737] (-) TimerEvent: {}
+[4.135701] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smartphone.dir/build.make:76: CMakeFiles/smartphone.dir/src/smartphone.cpp.o] Error 1\n'}
+[4.135853] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smartphone.dir/all] Error 2\n'}
+[4.136437] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.139674] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[4.233980] (-) TimerEvent: {}
+[4.249564] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[4.260122] (-) EventReactorShutdown: {}

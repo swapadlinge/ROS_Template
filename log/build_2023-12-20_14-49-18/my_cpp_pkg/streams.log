@@ -1,0 +1,104 @@
+[0.056s] Invoking command in '/home/swapnil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
+[0.159s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.307s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.366s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.371s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.383s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.401s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.422s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.499s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.503s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.610s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.775s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.955s] -- Configuring done
+[0.958s] [33mCMake Warning (dev) at CMakeLists.txt:16 (add_executable):
+[0.958s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.958s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.959s]   command to set the policy and suppress this warning.
+[0.959s] 
+[0.959s]   File:
+[0.959s] 
+[0.959s]     /home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp
+[0.959s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.959s] [0m
+[0.959s] [33mCMake Warning (dev) at CMakeLists.txt:19 (add_executable):
+[0.959s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.959s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.959s]   command to set the policy and suppress this warning.
+[0.959s] 
+[0.959s]   File:
+[0.959s] 
+[0.959s]     /home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp
+[0.959s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.959s] [0m
+[0.977s] -- Generating done
+[0.979s] -- Build files have been written to: /home/swapnil/ros2_ws/build/my_cpp_pkg
+[1.004s] [35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[1.004s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[1.013s] [ 16%] [32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o[0m
+[1.019s] [ 50%] Built target cpp_node
+[1.020s] [ 83%] Built target robot_news_station
+[2.481s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K In constructor ‘[01m[KSmartphoneNode::SmartphoneNode()[m[K’:
+[2.481s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:8:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber[m[K’ was not declared in this scope; did you mean ‘[01m[Ksubscriber_[m[K’?
+[2.481s]     8 |         [01;31m[Ksubscriber[m[K = this->create_subscription<example_interfaces::msg::String>("robot_news", 10, std::bind(
+[2.481s]       |         [01;31m[K^~~~~~~~~~[m[K
+[2.481s]       |         [32m[Ksubscriber_[m[K
+[2.486s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.486s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.486s]                  from [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:1[m[K:
+[2.486s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:26:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.486s]    10 |         RCLCPP_INFO(this=[01;31m[K>[m[Kget_logger(), "Smarphone has been Started ..")
+[2.486s]       |                          [01;31m[K^[m[K
+[2.487s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.487s]    10 |         [01;31m[KRCLCPP_INFO[m[K(this=>get_logger(), "Smarphone has been Started ..")
+[2.487s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.487s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.487s]    10 |         [01;31m[KRCLCPP_INFO[m[K(this=>get_logger(), "Smarphone has been Started ..")
+[2.487s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.487s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.487s]    10 |         [01;31m[KRCLCPP_INFO[m[K(this=>get_logger(), "Smarphone has been Started ..")
+[2.487s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.487s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.487s]    10 |         [01;31m[KRCLCPP_INFO[m[K(this=>get_logger(), "Smarphone has been Started ..")
+[2.487s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.487s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.487s]    10 |         [01;31m[KRCLCPP_INFO[m[K(this=>get_logger(), "Smarphone has been Started ..")
+[2.487s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.488s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.488s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.488s]                  from [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:1[m[K:
+[2.488s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:26:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.488s]    10 |         RCLCPP_INFO(this=[01;31m[K>[m[Kget_logger(), "Smarphone has been Started ..")
+[2.488s]       |                          [01;31m[K^[m[K
+[2.488s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:10:26:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.488s]    10 |         RCLCPP_INFO(this=[01;31m[K>[m[Kget_logger(), "Smarphone has been Started ..")
+[2.488s]       |                          [01;31m[K^[m[K
+[2.488s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:11:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.488s]    11 |     [01;31m[K}[m[K
+[2.488s]       |     [01;31m[K^[m[K
+[2.493s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K In member function ‘[01m[Kvoid SmartphoneNode::callbackRobotNews(example_interfaces::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.493s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:15:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCL_CPPINFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[2.493s]    15 |         [01;31m[KRCL_CPPINFO[m[K(this->get_logger()," %s ",msg->data.c_str())
+[2.493s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.494s]       |         [32m[KRCLCPP_INFO[m[K
+[4.133s] gmake[2]: *** [CMakeFiles/smartphone.dir/build.make:76: CMakeFiles/smartphone.dir/src/smartphone.cpp.o] Error 1
+[4.133s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/smartphone.dir/all] Error 2
+[4.135s] gmake: *** [Makefile:146: all] Error 2
+[4.137s] Invoked command in '/home/swapnil/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7

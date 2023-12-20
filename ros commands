@@ -1,0 +1,55 @@
+
+-- Create Python package
+ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
+
+-- create cpp package
+ros2 pkg create my_cpp_pkg --build-type ament_cmake --dependencies rclcpp
+
+-- Run Node with custom name
+ros2 run my_py_pkg py_node --ros-args -r __node:=custom_py
+
+-- Run Node with Custom Name and Custom Topic
+ros2 run my_py_pkg robot_news_station --ros-args -r __node:=my_station -r robot_news:=my_news
+
+--Make File Executable
+chmod +x robot_news_station.py
+
+--List Running Nodes
+ros2 node list
+
+-- List ROs2 Topics
+ros2 topic list
+
+-- Get Subcriber and publishers of the topic
+ros2 topic info /robot_news 
+
+-- Get Information about Topic
+ros2 node info /robot_news_station 
+
+-- Check msges published to that topic
+ros2 topic echo /robot_news 
+
+-- Get Rate of msges published on topic
+ros2 topic hz /robot_news
+
+-- Get Bandwidth of msg consumed by the topic
+ros2 topic bw /robot_news 
+
+-- terminal subscriber
+ros2 topic echo /robot_news
+
+
+-- Info About DataType
+ros2 interface show example_interfaces/msg/String 
+
+--Monitor Nodes
+rqt
+req_graph
+
+-- Check DataType info of Publisher Msg
+ros2 interface show example_interfaces/msg/String
+
+-- No Need to Compile for each time with symlink command, we can directly run the node
+colcon build --packages-select my_py_pkg  --symlink-install
+
+

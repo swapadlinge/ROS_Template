@@ -1,0 +1,13 @@
+[0.054s] Invoking command in '/home/swapnil/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[0.097s] [ 50%] Built target cpp_node
+[0.100s] [ 75%] [32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o[0m
+[1.455s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:[m[K In constructor ‘[01m[KRobotNewsStationNode::RobotNewsStationNode()[m[K’:
+[1.455s] [01m[K/home/swapnil/ros2_ws/src/my_cpp_pkg/src/robot_news_station.cpp:11:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmillliseconds[m[K’ is not a member of ‘[01m[Kstd::chrono[m[K’; did you mean ‘[01m[Kmilliseconds[m[K’?
+[1.455s]    11 |             std::chrono::[01;31m[Kmillliseconds[m[K(500), std::bind(&RobotNewsStationNode::publishNews,this)
+[1.455s]       |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[1.455s]       |                          [32m[Kmilliseconds[m[K
+[1.938s] gmake[2]: *** [CMakeFiles/robot_news_station.dir/build.make:76: CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o] Error 1
+[1.938s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/robot_news_station.dir/all] Error 2
+[1.938s] gmake: *** [Makefile:146: all] Error 2
+[1.941s] Invoked command in '/home/swapnil/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/swapnil/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/swapnil/ros2_ws/build/my_cpp_pkg -- -j7 -l7
