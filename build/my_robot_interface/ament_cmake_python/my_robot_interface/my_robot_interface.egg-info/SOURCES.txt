@@ -1,0 +1,8 @@
+setup.py
+my_robot_interface/__init__.py
+my_robot_interface.egg-info/PKG-INFO
+my_robot_interface.egg-info/SOURCES.txt
+my_robot_interface.egg-info/dependency_links.txt
+my_robot_interface.egg-info/top_level.txt
+my_robot_interface/msg/__init__.py
+my_robot_interface/msg/_hardware_status.py
